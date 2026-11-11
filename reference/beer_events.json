@@ -1,0 +1,1292 @@
+{
+ "m_GameObject": {
+  "m_FileID": 0,
+  "m_PathID": 0
+ },
+ "m_Enabled": 1,
+ "m_Script": {
+  "m_FileID": 0,
+  "m_PathID": -3082203544527767022
+ },
+ "m_Name": "item_alcohol_vodka_StaticData",
+ "_stateHashToEventsCollection": [
+  {
+   "_animationEvents": [
+    {
+     "Parameter": {
+      "BoolParam": 0,
+      "FloatParam": 0.0,
+      "IntParam": 0,
+      "StringParam": "Holster",
+      "ParamType": 3
+     },
+     "_functionName": "Sound",
+     "_functionNameHash": 1554795451,
+     "Enabled": 1,
+     "_time": 0.8677685856819153,
+     "EventConditions": []
+    },
+    {
+     "Parameter": {
+      "BoolParam": 0,
+      "FloatParam": 0.0,
+      "IntParam": 2,
+      "StringParam": "",
+      "ParamType": 1
+     },
+     "_functionName": "ThirdAction",
+     "_functionNameHash": -612501071,
+     "Enabled": 1,
+     "_time": 0.9580838084220886,
+     "EventConditions": []
+    },
+    {
+     "Parameter": {
+      "BoolParam": 0,
+      "FloatParam": 0.0,
+      "IntParam": 0,
+      "StringParam": "",
+      "ParamType": 0
+     },
+     "_functionName": "WeapOut",
+     "_functionNameHash": 1174204865,
+     "Enabled": 1,
+     "_time": 0.976047933101654,
+     "EventConditions": []
+    }
+   ]
+  },
+  {
+   "_animationEvents": [
+    {
+     "Parameter": {
+      "BoolParam": 0,
+      "FloatParam": 0.0,
+      "IntParam": 0,
+      "StringParam": "",
+      "ParamType": 0
+     },
+     "_functionName": "IdleStart",
+     "_functionNameHash": 198060848,
+     "Enabled": 1,
+     "_time": 0.0,
+     "EventConditions": []
+    },
+    {
+     "Parameter": {
+      "BoolParam": 0,
+      "FloatParam": 0.0,
+      "IntParam": 0,
+      "StringParam": "Drink",
+      "ParamType": 3
+     },
+     "_functionName": "Sound",
+     "_functionNameHash": 1554795451,
+     "Enabled": 1,
+     "_time": 0.013698630034923553,
+     "EventConditions": [
+      {
+       "BoolValue": 1,
+       "FloatValue": 0.0,
+       "IntValue": 0,
+       "ParameterName": "Active",
+       "ConditionParamType": 2,
+       "ConditionMode": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "_animationEvents": [
+    {
+     "Parameter": {
+      "BoolParam": 0,
+      "FloatParam": 0.0,
+      "IntParam": 1,
+      "StringParam": "",
+      "ParamType": 1
+     },
+     "_functionName": "ThirdAction",
+     "_functionNameHash": -612501071,
+     "Enabled": 1,
+     "_time": 0.0,
+     "EventConditions": []
+    },
+    {
+     "Parameter": {
+      "BoolParam": 0,
+      "FloatParam": 0.0,
+      "IntParam": 0,
+      "StringParam": "Draw",
+      "ParamType": 3
+     },
+     "_functionName": "Sound",
+     "_functionNameHash": 1554795451,
+     "Enabled": 1,
+     "_time": 0.14677104353904724,
+     "EventConditions": []
+    },
+    {
+     "Parameter": {
+      "BoolParam": 0,
+      "FloatParam": 0.0,
+      "IntParam": 0,
+      "StringParam": "Open",
+      "ParamType": 3
+     },
+     "_functionName": "Sound",
+     "_functionNameHash": 1554795451,
+     "Enabled": 1,
+     "_time": 0.45080500841140747,
+     "EventConditions": []
+    },
+    {
+     "Parameter": {
+      "BoolParam": 0,
+      "FloatParam": 0.0,
+      "IntParam": 0,
+      "StringParam": "",
+      "ParamType": 0
+     },
+     "_functionName": "WeapIn",
+     "_functionNameHash": -224219248,
+     "Enabled": 1,
+     "_time": 1.0,
+     "EventConditions": []
+    }
+   ]
+  },
+  {
+   "_animationEvents": [
+    {
+     "Parameter": {
+      "BoolParam": 0,
+      "FloatParam": 0.0,
+      "IntParam": 0,
+      "StringParam": "",
+      "ParamType": 0
+     },
+     "_functionName": "IdleStart",
+     "_functionNameHash": 198060848,
+     "Enabled": 1,
+     "_time": 0.0,
+     "EventConditions": []
+    },
+    {
+     "Parameter": {
+      "BoolParam": 0,
+      "FloatParam": 0.0,
+      "IntParam": 0,
+      "StringParam": "Drink",
+      "ParamType": 3
+     },
+     "_functionName": "Sound",
+     "_functionNameHash": 1554795451,
+     "Enabled": 1,
+     "_time": 0.013698630034923553,
+     "EventConditions": [
+      {
+       "BoolValue": 1,
+       "FloatValue": 0.0,
+       "IntValue": 0,
+       "ParameterName": "Active",
+       "ConditionParamType": 2,
+       "ConditionMode": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "_animationEvents": [
+    {
+     "Parameter": {
+      "BoolParam": 0,
+      "FloatParam": 0.0,
+      "IntParam": 2,
+      "StringParam": "",
+      "ParamType": 1
+     },
+     "_functionName": "ThirdAction",
+     "_functionNameHash": -612501071,
+     "Enabled": 1,
+     "_time": 0.7010135054588318,
+     "EventConditions": []
+    },
+    {
+     "Parameter": {
+      "BoolParam": 0,
+      "FloatParam": 0.0,
+      "IntParam": 0,
+      "StringParam": "",
+      "ParamType": 0
+     },
+     "_functionName": "WeapOut",
+     "_functionNameHash": 1174204865,
+     "Enabled": 1,
+     "_time": 0.9864864945411682,
+     "EventConditions": []
+    }
+   ]
+  },
+  {
+   "_animationEvents": [
+    {
+     "Parameter": {
+      "BoolParam": 1,
+      "FloatParam": 0.0,
+      "IntParam": 0,
+      "StringParam": "",
+      "ParamType": 4
+     },
+     "_functionName": "UseProp",
+     "_functionNameHash": -1376281788,
+     "Enabled": 1,
+     "_time": 0.0,
+     "EventConditions": []
+    }
+   ]
+  },
+  {
+   "_animationEvents": [
+    {
+     "Parameter": {
+      "BoolParam": 0,
+      "FloatParam": 0.0,
+      "IntParam": 0,
+      "StringParam": "",
+      "ParamType": 4
+     },
+     "_functionName": "UseProp",
+     "_functionNameHash": -1376281788,
+     "Enabled": 1,
+     "_time": 0.5,
+     "EventConditions": []
+    }
+   ]
+  },
+  {
+   "_animationEvents": [
+    {
+     "Parameter": {
+      "BoolParam": 0,
+      "FloatParam": 0.0,
+      "IntParam": 0,
+      "StringParam": "SndDropBackpack",
+      "ParamType": 3
+     },
+     "_functionName": "Sound",
+     "_functionNameHash": 1554795451,
+     "Enabled": 1,
+     "_time": 0.0,
+     "EventConditions": []
+    },
+    {
+     "Parameter": {
+      "BoolParam": 0,
+      "FloatParam": 0.0,
+      "IntParam": 0,
+      "StringParam": "",
+      "ParamType": 0
+     },
+     "_functionName": "OnBackpackDrop",
+     "_functionNameHash": 224242560,
+     "Enabled": 1,
+     "_time": 0.25,
+     "EventConditions": []
+    }
+   ]
+  }
+ ],
+ "_stateHashToLActionSetups": [
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.7999999523162842,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.7999999523162842,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.5399999618530273,
+      "value": 1.0017857551574707,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.7999999523162842,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.20000000298023224,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.7999999523162842,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": -0.05412103235721588,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.0,
+      "outWeight": 0.0
+     },
+     {
+      "time": 0.4003661870956421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.0,
+      "outWeight": 0.0
+     },
+     {
+      "time": 0.4003661870956421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.0,
+      "outWeight": 0.0
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.5,
+      "outSlope": 0.5,
+      "weightedMode": 0,
+      "inWeight": 0.0,
+      "outWeight": 0.0
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": 0.05412103235721588,
+      "weightedMode": 3,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 3,
+      "inWeight": 0.3333333432674408,
+      "outWeight": 0.3333333432674408
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  },
+  {
+   "StartThreshold": 0.8999999761581421,
+   "LayerWeight": {
+    "m_Curve": [
+     {
+      "time": 0.0,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.0,
+      "outWeight": 0.0
+     },
+     {
+      "time": 0.8999999761581421,
+      "value": 1.0,
+      "inSlope": 0.0,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.0,
+      "outWeight": 0.0
+     },
+     {
+      "time": 1.0,
+      "value": 0.0,
+      "inSlope": 0.5,
+      "outSlope": 0.0,
+      "weightedMode": 0,
+      "inWeight": 0.0,
+      "outWeight": 0.0
+     }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+   },
+   "_stateHash": 0
+  }
+ ]
+}

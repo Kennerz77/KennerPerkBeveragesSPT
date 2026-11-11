@@ -1,0 +1,1834 @@
+{
+ "name": "item_drink_beer_anim.generated",
+ "active": true,
+ "layer": 0,
+ "pos": [
+  0.024168,
+  1.471757,
+  0.027882
+ ],
+ "rot": [
+  0.0,
+  0.0,
+  0.0,
+  1.0
+ ],
+ "scale": [
+  1.0,
+  1.0,
+  1.0
+ ],
+ "comps": [
+  "Transform",
+  "Animator",
+  "LODGroup",
+  "MB:TransformLinks"
+ ],
+ "children": [
+  {
+   "name": "Base HumanLCollarbone",
+   "active": true,
+   "layer": 0,
+   "pos": [
+    0.000541,
+    -0.042553,
+    0.066809
+   ],
+   "rot": [
+    0.63927,
+    0.237223,
+    0.13291,
+    0.719301
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "comps": [
+    "Transform"
+   ],
+   "children": [
+    {
+     "name": "Base HumanLUpperarm",
+     "active": true,
+     "layer": 0,
+     "pos": [
+      -0.133375,
+      -0.0,
+      0.0
+     ],
+     "rot": [
+      0.386582,
+      0.168862,
+      0.471543,
+      0.774395
+     ],
+     "scale": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "comps": [
+      "Transform"
+     ],
+     "children": [
+      {
+       "name": "Base HumanLForearm1",
+       "active": true,
+       "layer": 0,
+       "pos": [
+        -0.296512,
+        -0.0,
+        0.0
+       ],
+       "rot": [
+        0.00591,
+        0.056529,
+        -0.79037,
+        0.609987
+       ],
+       "scale": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "comps": [
+        "Transform"
+       ],
+       "children": [
+        {
+         "name": "Base HumanLForearm2",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          -0.083652,
+          0.0,
+          0.0
+         ],
+         "rot": [
+          0.066833,
+          0.004954,
+          -6.4e-05,
+          0.997752
+         ],
+         "scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": [
+          {
+           "name": "Base HumanLForearm3",
+           "active": true,
+           "layer": 0,
+           "pos": [
+            -0.083652,
+            -0.0,
+            0.0
+           ],
+           "rot": [
+            0.105898,
+            -0.0,
+            -0.0,
+            0.994377
+           ],
+           "scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "comps": [
+            "Transform"
+           ],
+           "children": [
+            {
+             "name": "Base HumanLPalm",
+             "active": true,
+             "layer": 0,
+             "pos": [
+              -0.083651,
+              -0.0,
+              0.0
+             ],
+             "rot": [
+              -0.659387,
+              0.075077,
+              -0.122463,
+              0.737953
+             ],
+             "scale": [
+              1.0,
+              1.0,
+              1.0
+             ],
+             "comps": [
+              "Transform"
+             ],
+             "children": [
+              {
+               "name": "Base HumanLDigit11",
+               "active": true,
+               "layer": 0,
+               "pos": [
+                -0.041277,
+                -0.020866,
+                0.040041
+               ],
+               "rot": [
+                0.717614,
+                0.44018,
+                -0.088948,
+                0.532316
+               ],
+               "scale": [
+                1.0,
+                1.0,
+                1.0
+               ],
+               "comps": [
+                "Transform"
+               ],
+               "children": [
+                {
+                 "name": "Base HumanLDigit12",
+                 "active": true,
+                 "layer": 0,
+                 "pos": [
+                  -0.03977,
+                  -0.0,
+                  0.0
+                 ],
+                 "rot": [
+                  0.009158,
+                  -0.003198,
+                  0.222317,
+                  0.974926
+                 ],
+                 "scale": [
+                  1.0,
+                  1.0,
+                  1.0
+                 ],
+                 "comps": [
+                  "Transform"
+                 ],
+                 "children": [
+                  {
+                   "name": "Base HumanLDigit13",
+                   "active": true,
+                   "layer": 0,
+                   "pos": [
+                    -0.037273,
+                    0.0,
+                    0.0
+                   ],
+                   "rot": [
+                    -0.006667,
+                    0.005476,
+                    0.052136,
+                    0.998603
+                   ],
+                   "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                   ],
+                   "comps": [
+                    "Transform"
+                   ],
+                   "children": []
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "name": "Base HumanLDigit21",
+               "active": true,
+               "layer": 0,
+               "pos": [
+                -0.105337,
+                0.000316,
+                0.036054
+               ],
+               "rot": [
+                0.083124,
+                -0.079854,
+                -0.102402,
+                0.988042
+               ],
+               "scale": [
+                1.0,
+                1.0,
+                1.0
+               ],
+               "comps": [
+                "Transform"
+               ],
+               "children": [
+                {
+                 "name": "Base HumanLDigit22",
+                 "active": true,
+                 "layer": 0,
+                 "pos": [
+                  -0.056215,
+                  0.0,
+                  -0.0
+                 ],
+                 "rot": [
+                  -6.5e-05,
+                  2.7e-05,
+                  0.336173,
+                  0.9418
+                 ],
+                 "scale": [
+                  1.0,
+                  1.0,
+                  1.0
+                 ],
+                 "comps": [
+                  "Transform"
+                 ],
+                 "children": [
+                  {
+                   "name": "Base HumanLDigit23",
+                   "active": true,
+                   "layer": 0,
+                   "pos": [
+                    -0.02715,
+                    0.0,
+                    -0.0
+                   ],
+                   "rot": [
+                    -0.000226,
+                    -0.000204,
+                    0.158546,
+                    0.987352
+                   ],
+                   "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                   ],
+                   "comps": [
+                    "Transform"
+                   ],
+                   "children": []
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "name": "Base HumanLDigit31",
+               "active": true,
+               "layer": 0,
+               "pos": [
+                -0.107503,
+                0.011885,
+                0.008879
+               ],
+               "rot": [
+                0.018839,
+                -0.096914,
+                -0.010332,
+                0.995061
+               ],
+               "scale": [
+                1.0,
+                1.0,
+                1.0
+               ],
+               "comps": [
+                "Transform"
+               ],
+               "children": [
+                {
+                 "name": "Base HumanLDigit32",
+                 "active": true,
+                 "layer": 0,
+                 "pos": [
+                  -0.058767,
+                  0.0,
+                  -0.0
+                 ],
+                 "rot": [
+                  -3.4e-05,
+                  -8e-06,
+                  0.312866,
+                  0.949797
+                 ],
+                 "scale": [
+                  1.0,
+                  1.0,
+                  1.0
+                 ],
+                 "comps": [
+                  "Transform"
+                 ],
+                 "children": [
+                  {
+                   "name": "Base HumanLDigit33",
+                   "active": true,
+                   "layer": 0,
+                   "pos": [
+                    -0.033499,
+                    0.0,
+                    0.0
+                   ],
+                   "rot": [
+                    -0.000195,
+                    -7.3e-05,
+                    0.233823,
+                    0.972279
+                   ],
+                   "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                   ],
+                   "comps": [
+                    "Transform"
+                   ],
+                   "children": []
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "name": "Base HumanLDigit41",
+               "active": true,
+               "layer": 0,
+               "pos": [
+                -0.105145,
+                0.009927,
+                -0.016265
+               ],
+               "rot": [
+                -0.062393,
+                -0.136306,
+                0.06554,
+                0.986525
+               ],
+               "scale": [
+                1.0,
+                1.0,
+                1.0
+               ],
+               "comps": [
+                "Transform"
+               ],
+               "children": [
+                {
+                 "name": "Base HumanLDigit42",
+                 "active": true,
+                 "layer": 0,
+                 "pos": [
+                  -0.050606,
+                  -0.0,
+                  -0.0
+                 ],
+                 "rot": [
+                  -0.001761,
+                  -0.003419,
+                  0.333597,
+                  0.942708
+                 ],
+                 "scale": [
+                  1.0,
+                  1.0,
+                  1.0
+                 ],
+                 "comps": [
+                  "Transform"
+                 ],
+                 "children": [
+                  {
+                   "name": "Base HumanLDigit43",
+                   "active": true,
+                   "layer": 0,
+                   "pos": [
+                    -0.030035,
+                    0.0,
+                    -0.0
+                   ],
+                   "rot": [
+                    -0.009144,
+                    0.016995,
+                    0.262316,
+                    0.964789
+                   ],
+                   "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                   ],
+                   "comps": [
+                    "Transform"
+                   ],
+                   "children": []
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "name": "Base HumanLDigit51",
+               "active": true,
+               "layer": 0,
+               "pos": [
+                -0.098697,
+                0.002117,
+                -0.038635
+               ],
+               "rot": [
+                -0.20822,
+                -0.175847,
+                0.124507,
+                0.954055
+               ],
+               "scale": [
+                1.0,
+                1.0,
+                1.0
+               ],
+               "comps": [
+                "Transform"
+               ],
+               "children": [
+                {
+                 "name": "Base HumanLDigit52",
+                 "active": true,
+                 "layer": 0,
+                 "pos": [
+                  -0.040163,
+                  0.0,
+                  -0.0
+                 ],
+                 "rot": [
+                  -0.007443,
+                  -0.011916,
+                  0.38336,
+                  0.923492
+                 ],
+                 "scale": [
+                  1.0,
+                  1.0,
+                  1.0
+                 ],
+                 "comps": [
+                  "Transform"
+                 ],
+                 "children": [
+                  {
+                   "name": "Base HumanLDigit53",
+                   "active": true,
+                   "layer": 0,
+                   "pos": [
+                    -0.019784,
+                    -0.0,
+                    -0.0
+                   ],
+                   "rot": [
+                    -0.011953,
+                    0.003581,
+                    0.440311,
+                    0.897759
+                   ],
+                   "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                   ],
+                   "comps": [
+                    "Transform"
+                   ],
+                   "children": []
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Base HumanRCollarbone",
+   "active": true,
+   "layer": 0,
+   "pos": [
+    0.069722,
+    -0.040977,
+    -0.005383
+   ],
+   "rot": [
+    0.19542,
+    0.685179,
+    0.690239,
+    -0.126141
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "comps": [
+    "Transform"
+   ],
+   "children": [
+    {
+     "name": "Base HumanRUpperarm",
+     "active": true,
+     "layer": 0,
+     "pos": [
+      -0.118286,
+      -0.061473,
+      -0.003835
+     ],
+     "rot": [
+      -0.105183,
+      -0.208891,
+      0.189394,
+      0.953641
+     ],
+     "scale": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "comps": [
+      "Transform"
+     ],
+     "children": [
+      {
+       "name": "Base HumanRForearm1",
+       "active": true,
+       "layer": 0,
+       "pos": [
+        -0.29651,
+        -0.0,
+        0.0
+       ],
+       "rot": [
+        -0.422291,
+        -0.422954,
+        -0.574641,
+        0.559078
+       ],
+       "scale": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "comps": [
+        "Transform"
+       ],
+       "children": [
+        {
+         "name": "Base HumanRForearm2",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          -0.083652,
+          0.0,
+          0.0
+         ],
+         "rot": [
+          0.076169,
+          1.9e-05,
+          -7e-06,
+          0.997095
+         ],
+         "scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": [
+          {
+           "name": "Base HumanRForearm3",
+           "active": true,
+           "layer": 0,
+           "pos": [
+            -0.083652,
+            -0.0,
+            -0.0
+           ],
+           "rot": [
+            0.144442,
+            0.0,
+            -0.0,
+            0.989513
+           ],
+           "scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "comps": [
+            "Transform"
+           ],
+           "children": [
+            {
+             "name": "Base HumanRPalm",
+             "active": true,
+             "layer": 0,
+             "pos": [
+              -0.083652,
+              0.0,
+              0.0
+             ],
+             "rot": [
+              0.742205,
+              0.09304,
+              -0.196795,
+              0.633835
+             ],
+             "scale": [
+              1.0,
+              1.0,
+              1.0
+             ],
+             "comps": [
+              "Transform"
+             ],
+             "children": [
+              {
+               "name": "Base HumanRDigit11",
+               "active": true,
+               "layer": 0,
+               "pos": [
+                -0.041277,
+                -0.020866,
+                -0.040041
+               ],
+               "rot": [
+                -0.751814,
+                -0.288558,
+                -0.079239,
+                0.587564
+               ],
+               "scale": [
+                1.0,
+                1.0,
+                1.0
+               ],
+               "comps": [
+                "Transform"
+               ],
+               "children": [
+                {
+                 "name": "Base HumanRDigit12",
+                 "active": true,
+                 "layer": 0,
+                 "pos": [
+                  -0.03977,
+                  0.0,
+                  -0.0
+                 ],
+                 "rot": [
+                  -0.009632,
+                  0.002355,
+                  0.222465,
+                  0.97489
+                 ],
+                 "scale": [
+                  1.0,
+                  1.0,
+                  1.0
+                 ],
+                 "comps": [
+                  "Transform"
+                 ],
+                 "children": [
+                  {
+                   "name": "Base HumanRDigit13",
+                   "active": true,
+                   "layer": 0,
+                   "pos": [
+                    -0.037273,
+                    -0.0,
+                    0.0
+                   ],
+                   "rot": [
+                    0.006695,
+                    -0.005078,
+                    0.036334,
+                    0.999304
+                   ],
+                   "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                   ],
+                   "comps": [
+                    "Transform"
+                   ],
+                   "children": []
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "name": "Base HumanRDigit21",
+               "active": true,
+               "layer": 0,
+               "pos": [
+                -0.105338,
+                0.000316,
+                -0.036054
+               ],
+               "rot": [
+                0.039482,
+                0.09547,
+                -0.119414,
+                0.987455
+               ],
+               "scale": [
+                1.0,
+                1.0,
+                1.0
+               ],
+               "comps": [
+                "Transform"
+               ],
+               "children": [
+                {
+                 "name": "Base HumanRDigit22",
+                 "active": true,
+                 "layer": 0,
+                 "pos": [
+                  -0.056215,
+                  -0.0,
+                  0.0
+                 ],
+                 "rot": [
+                  6.1e-05,
+                  -2.1e-05,
+                  0.147799,
+                  0.989017
+                 ],
+                 "scale": [
+                  1.0,
+                  1.0,
+                  1.0
+                 ],
+                 "comps": [
+                  "Transform"
+                 ],
+                 "children": [
+                  {
+                   "name": "Base HumanRDigit23",
+                   "active": true,
+                   "layer": 0,
+                   "pos": [
+                    -0.02715,
+                    0.0,
+                    -0.0
+                   ],
+                   "rot": [
+                    0.000218,
+                    0.00017,
+                    0.158594,
+                    0.987344
+                   ],
+                   "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                   ],
+                   "comps": [
+                    "Transform"
+                   ],
+                   "children": []
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "name": "Base HumanRDigit31",
+               "active": true,
+               "layer": 0,
+               "pos": [
+                -0.107503,
+                0.011886,
+                -0.008879
+               ],
+               "rot": [
+                0.072472,
+                0.109967,
+                0.036005,
+                0.990636
+               ],
+               "scale": [
+                1.0,
+                1.0,
+                1.0
+               ],
+               "comps": [
+                "Transform"
+               ],
+               "children": [
+                {
+                 "name": "Base HumanRDigit32",
+                 "active": true,
+                 "layer": 0,
+                 "pos": [
+                  -0.058767,
+                  0.0,
+                  0.0
+                 ],
+                 "rot": [
+                  2.7e-05,
+                  -7.3e-05,
+                  0.238694,
+                  0.971095
+                 ],
+                 "scale": [
+                  1.0,
+                  1.0,
+                  1.0
+                 ],
+                 "comps": [
+                  "Transform"
+                 ],
+                 "children": [
+                  {
+                   "name": "Base HumanRDigit33",
+                   "active": true,
+                   "layer": 0,
+                   "pos": [
+                    -0.033499,
+                    0.0,
+                    -0.0
+                   ],
+                   "rot": [
+                    0.000227,
+                    0.000144,
+                    0.23375,
+                    0.972297
+                   ],
+                   "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                   ],
+                   "comps": [
+                    "Transform"
+                   ],
+                   "children": []
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "name": "Base HumanRDigit41",
+               "active": true,
+               "layer": 0,
+               "pos": [
+                -0.105145,
+                0.009927,
+                0.016265
+               ],
+               "rot": [
+                0.137356,
+                0.126916,
+                0.14796,
+                0.971151
+               ],
+               "scale": [
+                1.0,
+                1.0,
+                1.0
+               ],
+               "comps": [
+                "Transform"
+               ],
+               "children": [
+                {
+                 "name": "Base HumanRDigit42",
+                 "active": true,
+                 "layer": 0,
+                 "pos": [
+                  -0.050606,
+                  0.0,
+                  -0.0
+                 ],
+                 "rot": [
+                  0.002032,
+                  0.003188,
+                  0.252012,
+                  0.967717
+                 ],
+                 "scale": [
+                  1.0,
+                  1.0,
+                  1.0
+                 ],
+                 "comps": [
+                  "Transform"
+                 ],
+                 "children": [
+                  {
+                   "name": "Base HumanRDigit43",
+                   "active": true,
+                   "layer": 0,
+                   "pos": [
+                    -0.030035,
+                    0.0,
+                    -0.0
+                   ],
+                   "rot": [
+                    0.010996,
+                    -0.016529,
+                    0.179,
+                    0.983649
+                   ],
+                   "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                   ],
+                   "comps": [
+                    "Transform"
+                   ],
+                   "children": []
+                  }
+                 ]
+                }
+               ]
+              },
+              {
+               "name": "Base HumanRDigit51",
+               "active": true,
+               "layer": 0,
+               "pos": [
+                -0.098697,
+                0.002118,
+                0.038635
+               ],
+               "rot": [
+                0.223576,
+                0.123077,
+                0.198604,
+                0.946267
+               ],
+               "scale": [
+                1.0,
+                1.0,
+                1.0
+               ],
+               "comps": [
+                "Transform"
+               ],
+               "children": [
+                {
+                 "name": "Base HumanRDigit52",
+                 "active": true,
+                 "layer": 0,
+                 "pos": [
+                  -0.040162,
+                  0.0,
+                  0.0
+                 ],
+                 "rot": [
+                  0.005474,
+                  0.012881,
+                  0.232147,
+                  0.97258
+                 ],
+                 "scale": [
+                  1.0,
+                  1.0,
+                  1.0
+                 ],
+                 "comps": [
+                  "Transform"
+                 ],
+                 "children": [
+                  {
+                   "name": "Base HumanRDigit53",
+                   "active": true,
+                   "layer": 0,
+                   "pos": [
+                    -0.019784,
+                    0.0,
+                    -0.0
+                   ],
+                   "rot": [
+                    0.013131,
+                    -0.001666,
+                    0.292282,
+                    0.956241
+                   ],
+                   "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                   ],
+                   "comps": [
+                    "Transform"
+                   ],
+                   "children": []
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Camera_animated",
+   "active": true,
+   "layer": 0,
+   "pos": [
+    0.04156,
+    0.032118,
+    0.054066
+   ],
+   "rot": [
+    -0.707107,
+    -1e-06,
+    -1e-06,
+    0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "comps": [
+    "Transform"
+   ],
+   "children": []
+  },
+  {
+   "name": "Weapon_root",
+   "active": true,
+   "layer": 0,
+   "pos": [
+    0.132657,
+    -0.057801,
+    -0.010453
+   ],
+   "rot": [
+    -0.707107,
+    -0.0,
+    -0.0,
+    0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "comps": [
+    "Transform"
+   ],
+   "children": [
+    {
+     "name": "Weapon_root_anim",
+     "active": true,
+     "layer": 0,
+     "pos": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rot": [
+      -0.0,
+      -0.0,
+      -0.0,
+      1.0
+     ],
+     "scale": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "comps": [
+      "Transform"
+     ],
+     "children": [
+      {
+       "name": "weapon",
+       "active": true,
+       "layer": 0,
+       "pos": [
+        -0.392134,
+        0.123779,
+        -0.051139
+       ],
+       "rot": [
+        0.421417,
+        0.164043,
+        0.338566,
+        0.825149
+       ],
+       "scale": [
+        1.000001,
+        1.0,
+        1.0
+       ],
+       "comps": [
+        "Transform"
+       ],
+       "children": [
+        {
+         "name": "aim_camera",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          -3.8e-05,
+          -0.100521,
+          0.055187
+         ],
+         "rot": [
+          -0.0,
+          1.0,
+          1e-06,
+          -0.0
+         ],
+         "scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": []
+        },
+        {
+         "name": "Bend_Goal_Left",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          0.03675,
+          0.068142,
+          -0.129605
+         ],
+         "rot": [
+          0.663204,
+          -0.26805,
+          0.698562,
+          0.017921
+         ],
+         "scale": [
+          1.000001,
+          1.0,
+          0.999999
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": []
+        },
+        {
+         "name": "Bend_Goal_Right",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          0.65485,
+          -0.180517,
+          0.064716
+         ],
+         "rot": [
+          0.226315,
+          0.285109,
+          0.928574,
+          0.072419
+         ],
+         "scale": [
+          1.000001,
+          1.0,
+          0.999999
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": []
+        },
+        {
+         "name": "cap",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          0.0,
+          -0.363053,
+          0.110784
+         ],
+         "rot": [
+          -0.0,
+          0.0,
+          -0.0,
+          1.0
+         ],
+         "scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": [
+          {
+           "name": "item_dink_beer_cap_LOD0",
+           "active": true,
+           "layer": 0,
+           "pos": [
+            0.0,
+            -0.0,
+            0.004422
+           ],
+           "rot": [
+            0.707106,
+            -0.0,
+            0.0,
+            0.707108
+           ],
+           "scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "comps": [
+            "Transform",
+            "MeshFilter",
+            "MeshRenderer"
+           ],
+           "children": []
+          }
+         ]
+        },
+        {
+         "name": "fireport",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          -7e-06,
+          -0.551906,
+          0.035754
+         ],
+         "rot": [
+          0.0,
+          -0.0,
+          0.0,
+          1.0
+         ],
+         "scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": [
+          {
+           "name": "muzzleflash_base(Clone)",
+           "active": true,
+           "layer": 0,
+           "pos": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "rot": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+           ],
+           "scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "comps": [
+            "Transform",
+            "MB:MuzzleSparks",
+            "MB:MuzzleSmoke",
+            "MB:MuzzleFume",
+            "MB:MuzzleJet",
+            "MB:MuzzleFume"
+           ],
+           "children": []
+          },
+          {
+           "name": "DefaultHeatHaze(Clone)",
+           "active": true,
+           "layer": 0,
+           "pos": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "rot": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+           ],
+           "scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "comps": [
+            "Transform",
+            "MB:HeatHazeEmitter"
+           ],
+           "children": []
+          }
+         ]
+        },
+        {
+         "name": "mod_item",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          0.0,
+          -0.363054,
+          0.013351
+         ],
+         "rot": [
+          -2e-06,
+          -0.0,
+          0.0,
+          1.0
+         ],
+         "scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": [
+          {
+           "name": "Item_drink_beer_LOD0",
+           "active": true,
+           "layer": 0,
+           "pos": [
+            0.0,
+            0.0,
+            -0.123883
+           ],
+           "rot": [
+            0.707107,
+            -0.0,
+            -0.0,
+            0.707107
+           ],
+           "scale": [
+            1.0,
+            1.000001,
+            1.0
+           ],
+           "comps": [
+            "Transform",
+            "MeshFilter",
+            "MeshRenderer"
+           ],
+           "children": []
+          },
+          {
+           "name": "Item_drink_beer_LOD1",
+           "active": true,
+           "layer": 0,
+           "pos": [
+            -0.0,
+            -0.0,
+            -0.123883
+           ],
+           "rot": [
+            0.707107,
+            -0.0,
+            -0.0,
+            0.707107
+           ],
+           "scale": [
+            1.0,
+            1.000001,
+            1.0
+           ],
+           "comps": [
+            "Transform",
+            "MeshFilter",
+            "MeshRenderer"
+           ],
+           "children": []
+          },
+          {
+           "name": "Item_drink_beer_LOD2",
+           "active": true,
+           "layer": 0,
+           "pos": [
+            -0.0,
+            -0.0,
+            -0.123883
+           ],
+           "rot": [
+            0.707107,
+            -0.0,
+            -0.0,
+            0.707107
+           ],
+           "scale": [
+            1.0,
+            1.000001,
+            1.0
+           ],
+           "comps": [
+            "Transform",
+            "MeshFilter",
+            "MeshRenderer"
+           ],
+           "children": []
+          },
+          {
+           "name": "Item_drink_beer_LOD3",
+           "active": true,
+           "layer": 0,
+           "pos": [
+            -0.0,
+            -0.0,
+            -0.123883
+           ],
+           "rot": [
+            0.707107,
+            -0.0,
+            -0.0,
+            0.707107
+           ],
+           "scale": [
+            1.0,
+            1.000001,
+            1.0
+           ],
+           "comps": [
+            "Transform",
+            "MeshFilter",
+            "MeshRenderer",
+            "BoxCollider"
+           ],
+           "children": []
+          }
+         ]
+        },
+        {
+         "name": "mod_muzzle",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          -7e-06,
+          -0.551906,
+          0.035754
+         ],
+         "rot": [
+          0.0,
+          -0.0,
+          0.0,
+          1.0
+         ],
+         "scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": []
+        },
+        {
+         "name": "patron_in_weapon",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          -7e-06,
+          -0.551906,
+          0.035754
+         ],
+         "rot": [
+          -2e-06,
+          -0.0,
+          0.0,
+          1.0
+         ],
+         "scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": []
+        },
+        {
+         "name": "shellport",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          -7e-06,
+          -0.551906,
+          0.035754
+         ],
+         "rot": [
+          0.0,
+          -0.0,
+          0.0,
+          1.0
+         ],
+         "scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": []
+        },
+        {
+         "name": "smokeport",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          0.000196,
+          -0.513043,
+          0.016938
+         ],
+         "rot": [
+          0.0,
+          -0.0,
+          0.0,
+          1.0
+         ],
+         "scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": []
+        },
+        {
+         "name": "weapon_L_hand_marker",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          -0.048592,
+          -0.615532,
+          -0.039726
+         ],
+         "rot": [
+          -0.275788,
+          -0.391816,
+          0.694084,
+          0.537278
+         ],
+         "scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": []
+        },
+        {
+         "name": "weapon_L_IK_marker",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          -0.091299,
+          -0.294505,
+          -0.090025
+         ],
+         "rot": [
+          0.096893,
+          0.18757,
+          0.573387,
+          0.791616
+         ],
+         "scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": []
+        },
+        {
+         "name": "weapon_LCollarbone_marker",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          0.04726,
+          -0.139332,
+          0.301309
+         ],
+         "rot": [
+          0.798292,
+          -0.179403,
+          0.118524,
+          0.562581
+         ],
+         "scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": []
+        },
+        {
+         "name": "weapon_R_hand_marker",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          0.041237,
+          -0.351066,
+          -0.07245
+         ],
+         "rot": [
+          0.719255,
+          0.685919,
+          0.00856,
+          0.110065
+         ],
+         "scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": []
+        },
+        {
+         "name": "weapon_R_IK_marker",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          0.425262,
+          -0.391431,
+          0.024258
+         ],
+         "rot": [
+          0.785926,
+          0.534248,
+          0.251418,
+          0.183544
+         ],
+         "scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": []
+        },
+        {
+         "name": "weapon_RCollarbone_marker",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          0.147198,
+          -0.137149,
+          0.298522
+         ],
+         "rot": [
+          0.090818,
+          0.418769,
+          0.902288,
+          -0.04754
+         ],
+         "scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": []
+        },
+        {
+         "name": "weapon_vest_IK_marker",
+         "active": true,
+         "layer": 0,
+         "pos": [
+          -0.124617,
+          -0.3223,
+          0.042934
+         ],
+         "rot": [
+          -0.090079,
+          0.286425,
+          0.744871,
+          0.595831
+         ],
+         "scale": [
+          1.0,
+          0.999999,
+          1.0
+         ],
+         "comps": [
+          "Transform"
+         ],
+         "children": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

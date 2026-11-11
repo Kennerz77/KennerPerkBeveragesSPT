@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>PerkBeverages</AssemblyName>
+    <RootNamespace>PerkBeverages</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+
+    <!-- Only this install. Do NOT point at D:\OTHER LAUNCHERS\BSTATE GAMES. -->
+    <GamePath Condition="'$(GamePath)' == ''">D:\OTHER LAUNCHERS\BUTTERSTATE</GamePath>
+    <ManagedPath>$(GamePath)\EscapeFromTarkov_Data\Managed</ManagedPath>
+    <PluginOutputPath>$(GamePath)\BepInEx\plugins\PerkBeverages</PluginOutputPath>
+    <!-- Release builds (-p:ReleaseBuild=true): F12 shows players only their settings (ReleaseMenu.cs) -->
+    <DefineConstants Condition="'$(ReleaseBuild)' == 'true'">$(DefineConstants);RELEASE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx" HintPath="$(GamePath)\BepInEx\core\BepInEx.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(GamePath)\BepInEx\core\0Harmony.dll" Private="false" />
+    <Reference Include="spt-reflection" HintPath="$(GamePath)\BepInEx\plugins\spt\spt-reflection.dll" Private="false" />
+    <Reference Include="Assembly-CSharp" HintPath="$(ManagedPath)\Assembly-CSharp.dll" Private="false" />
+    <Reference Include="Comfort" HintPath="$(ManagedPath)\Comfort.dll" Private="false" />
+    <Reference Include="Comfort.Unity" HintPath="$(ManagedPath)\Comfort.Unity.dll" Private="false" />
+    <Reference Include="Sirenix.Serialization" HintPath="$(ManagedPath)\Sirenix.Serialization.dll" Private="false" />
+    <Reference Include="UnityEngine" HintPath="$(ManagedPath)\UnityEngine.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(ManagedPath)\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="UnityEngine.AssetBundleModule" HintPath="$(ManagedPath)\UnityEngine.AssetBundleModule.dll" Private="false" />
+    <Reference Include="UnityEngine.AudioModule" HintPath="$(ManagedPath)\UnityEngine.AudioModule.dll" Private="false" />
+    <Reference Include="UnityEngine.PhysicsModule" HintPath="$(ManagedPath)\UnityEngine.PhysicsModule.dll" Private="false" />
+    <Reference Include="UnityEngine.InputLegacyModule" HintPath="$(ManagedPath)\UnityEngine.InputLegacyModule.dll" Private="false" />
+    <Reference Include="UnityEngine.ImageConversionModule" HintPath="$(ManagedPath)\UnityEngine.ImageConversionModule.dll" Private="false" />
+    <Reference Include="UnityEngine.UI" HintPath="$(ManagedPath)\UnityEngine.UI.dll" Private="false" />
+    <Reference Include="UnityEngine.UIModule" HintPath="$(ManagedPath)\UnityEngine.UIModule.dll" Private="false" />
+    <Reference Include="UnityEngine.IMGUIModule" HintPath="$(ManagedPath)\UnityEngine.IMGUIModule.dll" Private="false" />
+  </ItemGroup>
+
+  <Target Name="CopyToPlugins" AfterTargets="Build">
+    <MakeDir Directories="$(PluginOutputPath)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(PluginOutputPath)" />
+    <!-- the original's purchase sounds (cha-ching and deny), played in the player's head -->
+    <ItemGroup>
+      <SoundFiles Include="$(MSBuildProjectDirectory)\..\sounds\*.wav" />
+    </ItemGroup>
+    <Copy SourceFiles="@(SoundFiles)" DestinationFolder="$(PluginOutputPath)\sounds" />
+    <!-- the original's perk icons for the HUD (icons\<perk id>.png) -->
+    <ItemGroup>
+      <IconFiles Include="$(MSBuildProjectDirectory)\..\icons\*.png" />
+    </ItemGroup>
+    <Copy SourceFiles="@(IconFiles)" DestinationFolder="$(PluginOutputPath)\icons" />
+    <Message Importance="high" Text="Copied $(TargetFileName) -> $(PluginOutputPath)" />
+  </Target>
+
+</Project>

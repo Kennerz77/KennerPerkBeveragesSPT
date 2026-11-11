@@ -1,0 +1,49 @@
+[
+ {
+  "owner": "MB:PreviewPivot@item_drink_beer1",
+  "class": "PreviewPivot",
+  "fields": {
+   "m_Name": "",
+   "pivotPosition": {
+    "x": -7.450580596923828e-09,
+    "y": 0.11489445716142654,
+    "z": 0.0
+   },
+   "pivotRotation": {
+    "x": 0.7665982842445374,
+    "y": -0.0,
+    "z": -0.0,
+    "w": 0.6421270370483398
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   },
+   "SpawnPosition": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+   },
+   "Icon": {
+    "position": {
+     "x": -0.0010000000474974513,
+     "y": -0.0020000003278255463,
+     "z": 0.0
+    },
+    "hasOffset": 1,
+    "rotation": {
+     "x": 0.07845903933048248,
+     "y": 0.0,
+     "z": 0.0,
+     "w": -0.9969173669815063
+    },
+    "boundsScale": 0.8650009036064148,
+    "perspective": 15.0,
+    "orthographic": 0,
+    "orthographicSize": 10.0,
+    "overrideIcon": null
+   }
+  }
+ }
+]

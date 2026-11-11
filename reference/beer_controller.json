@@ -1,0 +1,2900 @@
+{
+ "name": "item_drink_beer",
+ "params": [
+  {
+   "name": "Active",
+   "type": "Bool",
+   "default": false
+  },
+  {
+   "name": "LActionIndex",
+   "type": "Int",
+   "default": 0
+  },
+  {
+   "name": "HandReady",
+   "type": "Trigger",
+   "default": false
+  },
+  {
+   "name": "LeftHandProgress",
+   "type": "Float",
+   "default": 0.0
+  },
+  {
+   "name": "GestureIndex",
+   "type": "Float",
+   "default": 0.0
+  },
+  {
+   "name": "Gesture",
+   "type": "Trigger",
+   "default": false
+  },
+  {
+   "name": "ThirdPerson",
+   "type": "Float",
+   "default": 0.0
+  }
+ ],
+ "layers": [
+  {
+   "name": "Base Layer",
+   "blending": 0,
+   "defaultWeight": 0.0,
+   "mask": {},
+   "ikPass": false,
+   "syncedLayerAffectsTiming": false,
+   "defaultState": null,
+   "states": [],
+   "anyState": []
+  },
+  {
+   "name": "Hands",
+   "blending": 0,
+   "defaultWeight": 1.0,
+   "mask": {
+    "0": 1.0,
+    "422597891": 1.0,
+    "1718152087": 1.0,
+    "1685101104": 1.0,
+    "802307715": 1.0,
+    "763305895": 1.0,
+    "1597118046": 1.0,
+    "3716598168": 1.0,
+    "3915073263": 1.0,
+    "867468282": 1.0,
+    "4138441307": 1.0,
+    "3110639567": 1.0,
+    "1228661330": 1.0,
+    "4021332762": 1.0,
+    "1068049680": 1.0,
+    "1623114442": 1.0,
+    "2700164573": 1.0,
+    "420427151": 1.0,
+    "3156549890": 1.0,
+    "3119123612": 1.0,
+    "2681112400": 1.0,
+    "2510291354": 1.0,
+    "3853564622": 1.0,
+    "3179006730": 1.0,
+    "2594454114": 1.0,
+    "1178899561": 1.0,
+    "133887668": 1.0,
+    "3140991930": 1.0,
+    "3924292653": 1.0,
+    "1075037160": 1.0,
+    "2009407219": 1.0,
+    "3268061166": 1.0,
+    "270537416": 1.0,
+    "222986075": 1.0,
+    "3687945903": 1.0,
+    "2531368983": 1.0,
+    "617570243": 1.0,
+    "2492465256": 1.0,
+    "2957488264": 1.0,
+    "4166302731": 1.0,
+    "2374709545": 1.0,
+    "914752087": 1.0,
+    "3520175251": 1.0,
+    "3666855909": 1.0,
+    "678927987": 1.0,
+    "3605229598": 1.0,
+    "752886102": 1.0,
+    "13662373": 1.0,
+    "1054046267": 1.0,
+    "1189921221": 1.0,
+    "69786993": 1.0,
+    "2490736384": 1.0,
+    "2170295967": 1.0,
+    "3715237504": 1.0,
+    "3279174874": 1.0,
+    "3494631957": 1.0,
+    "3152829502": 1.0,
+    "2770261676": 1.0,
+    "1503384911": 1.0,
+    "4193670776": 1.0,
+    "2637504855": 1.0,
+    "3339403183": 1.0,
+    "3071802386": 1.0,
+    "1639304858": 1.0,
+    "4035277118": 1.0,
+    "2513330016": 1.0
+   },
+   "ikPass": true,
+   "syncedLayerAffectsTiming": false,
+   "defaultState": "OUT TO USE",
+   "states": [
+    {
+     "name": "OUT TO USE",
+     "tag": null,
+     "speed": 1.0,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "blendType": 0,
+      "param": "ThirdPerson",
+      "paramY": "#4294967295",
+      "children": [
+       {
+        "clip": "beer_out_to_idle",
+        "clipIndex": 4
+       },
+       {
+        "clip": "beer_out_to_idle_3rd",
+        "clipIndex": 5
+       }
+      ],
+      "thresholds": [
+       0.0,
+       1.0
+      ]
+     },
+     "transitions": [
+      {
+       "to": "USE",
+       "toIndex": 1,
+       "name": "Hands.OUT TO USE -> Hands.USE",
+       "conditions": [],
+       "duration": 0.10000000149011612,
+       "offset": 0.0,
+       "exitTime": 0.8999999761581421,
+       "hasExitTime": true,
+       "fixedDuration": false,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "BREAK -1",
+       "toIndex": 4,
+       "name": "Hands.OUT TO USE -> Hands.BREAK -1",
+       "conditions": [
+        {
+         "param": "Active",
+         "mode": "IfNot",
+         "threshold": 0.0
+        }
+       ],
+       "duration": 0.20000000298023224,
+       "offset": 0.6700000166893005,
+       "exitTime": 0.3199999928474426,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "BREAK -1",
+       "toIndex": 4,
+       "name": "Hands.OUT TO USE -> Hands.BREAK -1",
+       "conditions": [
+        {
+         "param": "Active",
+         "mode": "IfNot",
+         "threshold": 0.0
+        }
+       ],
+       "duration": 0.20000000298023224,
+       "offset": 0.25,
+       "exitTime": 0.75,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "USE TO OUT",
+       "toIndex": 2,
+       "name": "Hands.OUT TO USE -> Hands.USE TO OUT",
+       "conditions": [
+        {
+         "param": "Active",
+         "mode": "IfNot",
+         "threshold": 0.0
+        }
+       ],
+       "duration": 0.25,
+       "offset": 0.0,
+       "exitTime": 0.9117646813392639,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "AnimationEventsStateBehaviour",
+       "fields": {
+        "EventsContainer": {},
+        "FullName": "Hands.OUT TO USE",
+        "FullNameHash": 492683391,
+        "EventsListId": 2
+       }
+      }
+     ]
+    },
+    {
+     "name": "USE",
+     "tag": null,
+     "speed": 1.0,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": true,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "blendType": 0,
+      "param": "ThirdPerson",
+      "paramY": "#4294967295",
+      "children": [
+       {
+        "clip": "beer_use",
+        "clipIndex": 2
+       },
+       {
+        "clip": "beer_use_3rd",
+        "clipIndex": 3
+       }
+      ],
+      "thresholds": [
+       0.0,
+       1.0
+      ]
+     },
+     "transitions": [
+      {
+       "to": "USE TO OUT",
+       "toIndex": 2,
+       "name": "Hands.USE -> Hands.USE TO OUT",
+       "conditions": [
+        {
+         "param": "Active",
+         "mode": "IfNot",
+         "threshold": 0.0
+        }
+       ],
+       "duration": 0.0,
+       "offset": 0.0,
+       "exitTime": 1.0,
+       "hasExitTime": false,
+       "fixedDuration": false,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "USE_1",
+       "toIndex": 3,
+       "name": "Hands.USE -> Hands.USE_1",
+       "conditions": [
+        {
+         "param": "Active",
+         "mode": "If",
+         "threshold": 0.0
+        }
+       ],
+       "duration": 0.15000000596046448,
+       "offset": 0.0,
+       "exitTime": 0.8999999761581421,
+       "hasExitTime": true,
+       "fixedDuration": false,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "AnimationEventsStateBehaviour",
+       "fields": {
+        "EventsContainer": {},
+        "FullName": "Hands.USE",
+        "FullNameHash": -735675743,
+        "EventsListId": 1
+       }
+      }
+     ]
+    },
+    {
+     "name": "USE TO OUT",
+     "tag": null,
+     "speed": 1.0,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "blendType": 0,
+      "param": "ThirdPerson",
+      "paramY": "#4294967295",
+      "children": [
+       {
+        "clip": "beer_idle_to_out",
+        "clipIndex": 0
+       },
+       {
+        "clip": "beer_idle_to_out_3rd",
+        "clipIndex": 1
+       }
+      ],
+      "thresholds": [
+       0.0,
+       1.0
+      ]
+     },
+     "transitions": [],
+     "behaviours": [
+      {
+       "class": "AnimationEventsStateBehaviour",
+       "fields": {
+        "EventsContainer": {},
+        "FullName": "Hands.USE TO OUT",
+        "FullNameHash": -1014941517,
+        "EventsListId": 0
+       }
+      }
+     ]
+    },
+    {
+     "name": "USE_1",
+     "tag": null,
+     "speed": 1.0,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": true,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "blendType": 0,
+      "param": "ThirdPerson",
+      "paramY": "#4294967295",
+      "children": [
+       {
+        "clip": "beer_use",
+        "clipIndex": 2
+       },
+       {
+        "clip": "beer_use_3rd",
+        "clipIndex": 3
+       }
+      ],
+      "thresholds": [
+       0.0,
+       1.0
+      ]
+     },
+     "transitions": [
+      {
+       "to": "USE",
+       "toIndex": 1,
+       "name": "Hands.USE_1 -> Hands.USE",
+       "conditions": [
+        {
+         "param": "Active",
+         "mode": "If",
+         "threshold": 0.0
+        }
+       ],
+       "duration": 0.15000000596046448,
+       "offset": 0.0,
+       "exitTime": 0.8999999761581421,
+       "hasExitTime": true,
+       "fixedDuration": false,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "USE TO OUT",
+       "toIndex": 2,
+       "name": "Hands.USE_1 -> Hands.USE TO OUT",
+       "conditions": [
+        {
+         "param": "Active",
+         "mode": "IfNot",
+         "threshold": 0.0
+        }
+       ],
+       "duration": 0.0,
+       "offset": 0.0,
+       "exitTime": 1.0,
+       "hasExitTime": false,
+       "fixedDuration": false,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "AnimationEventsStateBehaviour",
+       "fields": {
+        "EventsContainer": {},
+        "FullName": "Hands.USE_1",
+        "FullNameHash": 719885042,
+        "EventsListId": 3
+       }
+      }
+     ]
+    },
+    {
+     "name": "BREAK -1",
+     "tag": null,
+     "speed": -1.2000000476837158,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "blendType": 0,
+      "param": "ThirdPerson",
+      "paramY": "#4294967295",
+      "children": [
+       {
+        "clip": "beer_break",
+        "clipIndex": 8
+       },
+       {
+        "clip": "beer_break_3rd",
+        "clipIndex": 9
+       }
+      ],
+      "thresholds": [
+       0.0,
+       1.0
+      ]
+     },
+     "transitions": [],
+     "behaviours": [
+      {
+       "class": "AnimationEventsStateBehaviour",
+       "fields": {
+        "EventsContainer": {},
+        "FullName": "Hands.BREAK -1",
+        "FullNameHash": -431637764,
+        "EventsListId": 4
+       }
+      }
+     ]
+    },
+    {
+     "name": "weapon_root_anim_fix",
+     "tag": null,
+     "speed": 1.0,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 10
+     },
+     "transitions": []
+    }
+   ],
+   "anyState": []
+  },
+  {
+   "name": "LActions",
+   "blending": 0,
+   "defaultWeight": 0.0,
+   "mask": {
+    "0": 1.0,
+    "422597891": 0.0,
+    "1718152087": 0.0,
+    "1685101104": 1.0,
+    "802307715": 1.0,
+    "763305895": 1.0,
+    "1597118046": 1.0,
+    "3716598168": 1.0,
+    "3915073263": 1.0,
+    "867468282": 1.0,
+    "4138441307": 1.0,
+    "3110639567": 1.0,
+    "1228661330": 1.0,
+    "4021332762": 1.0,
+    "1068049680": 1.0,
+    "1623114442": 1.0,
+    "2700164573": 1.0,
+    "420427151": 1.0,
+    "3156549890": 1.0,
+    "3119123612": 1.0,
+    "2681112400": 1.0,
+    "2510291354": 1.0,
+    "3853564622": 0.0,
+    "3179006730": 0.0,
+    "2594454114": 0.0,
+    "1178899561": 0.0,
+    "133887668": 0.0,
+    "3140991930": 0.0,
+    "3924292653": 0.0,
+    "1075037160": 0.0,
+    "2009407219": 0.0,
+    "3268061166": 0.0,
+    "270537416": 0.0,
+    "222986075": 0.0,
+    "3687945903": 0.0,
+    "2531368983": 0.0,
+    "617570243": 0.0,
+    "2492465256": 0.0,
+    "2957488264": 0.0,
+    "4166302731": 0.0,
+    "2374709545": 0.0,
+    "914752087": 0.0,
+    "3520175251": 0.0,
+    "3666855909": 1.0,
+    "678927987": 1.0,
+    "3605229598": 0.0,
+    "752886102": 0.0,
+    "1054046267": 1.0,
+    "1189921221": 0.0,
+    "882318336": 1.0,
+    "1104932850": 0.0,
+    "2155831742": 0.0,
+    "344605619": 0.0,
+    "3146265243": 1.0,
+    "977575281": 0.0,
+    "578904865": 1.0,
+    "3392753874": 0.0,
+    "4193670776": 1.0,
+    "2637504855": 1.0,
+    "3339403183": 1.0,
+    "3071802386": 0.0,
+    "1639304858": 0.0,
+    "4035277118": 0.0,
+    "2513330016": 0.0
+   },
+   "ikPass": false,
+   "syncedLayerAffectsTiming": false,
+   "defaultState": "Idle",
+   "states": [
+    {
+     "name": "Idle",
+     "tag": null,
+     "speed": 0.5,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 17
+     },
+     "transitions": [
+      {
+       "to": "generic_270",
+       "toIndex": 15,
+       "name": "LActions.Idle -> LActions.generic_270",
+       "conditions": [
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        },
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 14.0
+        }
+       ],
+       "duration": 0.25,
+       "offset": 0.0,
+       "exitTime": 0.25,
+       "hasExitTime": false,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "push_hinge_right",
+       "toIndex": 16,
+       "name": "LActions.Idle -> LActions.push_hinge_right",
+       "conditions": [
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        },
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 57.0
+        }
+       ],
+       "duration": 0.10000000149011612,
+       "offset": 0.0,
+       "exitTime": 0.25,
+       "hasExitTime": false,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "hand_faceshield_on",
+       "toIndex": 19,
+       "name": "LActions.Idle -> LActions.hand_faceshield_on",
+       "conditions": [
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 401.0
+        },
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        }
+       ],
+       "duration": 0.10000000149011612,
+       "offset": 0.0,
+       "exitTime": 0.25,
+       "hasExitTime": false,
+       "fixedDuration": false,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "hand_nv_on",
+       "toIndex": 3,
+       "name": "LActions.Idle -> LActions.hand_nv_on",
+       "conditions": [
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        },
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 21.0
+        }
+       ],
+       "duration": 0.10000000149011612,
+       "offset": 0.0,
+       "exitTime": 0.25,
+       "hasExitTime": false,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "pull_hinge_right",
+       "toIndex": 11,
+       "name": "LActions.Idle -> LActions.pull_hinge_right",
+       "conditions": [
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        },
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 56.0
+        }
+       ],
+       "duration": 0.10000000149011612,
+       "offset": 0.0,
+       "exitTime": 0.25,
+       "hasExitTime": false,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "generic_90",
+       "toIndex": 2,
+       "name": "LActions.Idle -> LActions.generic_90",
+       "conditions": [
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        },
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 12.0
+        }
+       ],
+       "duration": 0.25,
+       "offset": 0.0,
+       "exitTime": 0.25,
+       "hasExitTime": false,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "hand_slap_forward",
+       "toIndex": 10,
+       "name": "LActions.Idle -> LActions.hand_slap_forward",
+       "conditions": [
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        },
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 99.0
+        }
+       ],
+       "duration": 0.05000000074505806,
+       "offset": 0.0,
+       "exitTime": 0.20173469185829163,
+       "hasExitTime": false,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "GESTURES",
+       "toIndex": 14,
+       "name": "LActions.Idle -> LActions.GESTURES",
+       "conditions": [
+        {
+         "param": "Gesture",
+         "mode": "If",
+         "threshold": 0.0
+        },
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        }
+       ],
+       "duration": 0.10000000149011612,
+       "offset": 0.0,
+       "exitTime": 0.8999999761581421,
+       "hasExitTime": false,
+       "fixedDuration": false,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "push_hinge_left",
+       "toIndex": 13,
+       "name": "LActions.Idle -> LActions.push_hinge_left",
+       "conditions": [
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        },
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 55.0
+        }
+       ],
+       "duration": 0.10000000149011612,
+       "offset": 0.0,
+       "exitTime": 0.25,
+       "hasExitTime": false,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "generic_180",
+       "toIndex": 7,
+       "name": "LActions.Idle -> LActions.generic_180",
+       "conditions": [
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        },
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 13.0
+        }
+       ],
+       "duration": 0.25,
+       "offset": 0.0,
+       "exitTime": 0.25,
+       "hasExitTime": false,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "OPEN_PUSH_LEFT_HINGE",
+       "toIndex": 20,
+       "name": "LActions.Idle -> LActions.OPEN_PUSH_LEFT_HINGE",
+       "conditions": [
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 51.0
+        },
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        }
+       ],
+       "duration": 0.004511997103691101,
+       "offset": 0.0,
+       "exitTime": 1.0,
+       "hasExitTime": false,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "OPEN_PULL_LEFT_HINGE",
+       "toIndex": 8,
+       "name": "LActions.Idle -> LActions.OPEN_PULL_LEFT_HINGE",
+       "conditions": [
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        },
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 54.0
+        }
+       ],
+       "duration": 0.10000000149011612,
+       "offset": 0.0,
+       "exitTime": 0.25,
+       "hasExitTime": false,
+       "fixedDuration": false,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "generic_0",
+       "toIndex": 9,
+       "name": "LActions.Idle -> LActions.generic_0",
+       "conditions": [
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        },
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 11.0
+        }
+       ],
+       "duration": 0.25,
+       "offset": 0.0,
+       "exitTime": 0.25,
+       "hasExitTime": false,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "hand_faceshield_off",
+       "toIndex": 12,
+       "name": "LActions.Idle -> LActions.hand_faceshield_off",
+       "conditions": [
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 400.0
+        },
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        }
+       ],
+       "duration": 0.10000000149011612,
+       "offset": 0.0,
+       "exitTime": 0.25,
+       "hasExitTime": false,
+       "fixedDuration": false,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "Trunk Close",
+       "toIndex": 1,
+       "name": "LActions.Idle -> LActions.Trunk Close",
+       "conditions": [
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        },
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 102.0
+        }
+       ],
+       "duration": 0.02114853262901306,
+       "offset": 0.0,
+       "exitTime": 0.2499999701976776,
+       "hasExitTime": false,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "pull_hinge_left",
+       "toIndex": 22,
+       "name": "LActions.Idle -> LActions.pull_hinge_left",
+       "conditions": [
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        },
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 58.0
+        }
+       ],
+       "duration": 0.25,
+       "offset": 0.0,
+       "exitTime": 0.25,
+       "hasExitTime": false,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "Take Loot",
+       "toIndex": 18,
+       "name": "LActions.Idle -> LActions.Take Loot",
+       "conditions": [
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        },
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 1.0
+        }
+       ],
+       "duration": 0.0,
+       "offset": 0.0,
+       "exitTime": 0.0,
+       "hasExitTime": false,
+       "fixedDuration": false,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "hand_nv_off",
+       "toIndex": 5,
+       "name": "LActions.Idle -> LActions.hand_nv_off",
+       "conditions": [
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 20.0
+        },
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        }
+       ],
+       "duration": 0.10000000149011612,
+       "offset": 0.0,
+       "exitTime": 0.25,
+       "hasExitTime": false,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "OPEN_PULL_RIGHT_HINGE",
+       "toIndex": 23,
+       "name": "LActions.Idle -> LActions.OPEN_PULL_RIGHT_HINGE",
+       "conditions": [
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 52.0
+        },
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        }
+       ],
+       "duration": 0.10000000149011612,
+       "offset": 0.0,
+       "exitTime": 0.25,
+       "hasExitTime": false,
+       "fixedDuration": false,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "hand_key_use",
+       "toIndex": 17,
+       "name": "LActions.Idle -> LActions.hand_key_use",
+       "conditions": [
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        },
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 50.0
+        }
+       ],
+       "duration": 0.05000000074505806,
+       "offset": 0.0,
+       "exitTime": 0.25,
+       "hasExitTime": false,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "OPEN_PUSH_RIGHT_HINGE",
+       "toIndex": 4,
+       "name": "LActions.Idle -> LActions.OPEN_PUSH_RIGHT_HINGE",
+       "conditions": [
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 53.0
+        },
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        }
+       ],
+       "duration": 0.10000000149011612,
+       "offset": 0.0,
+       "exitTime": 0.25,
+       "hasExitTime": false,
+       "fixedDuration": false,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "Trunk Open",
+       "toIndex": 21,
+       "name": "LActions.Idle -> LActions.Trunk Open",
+       "conditions": [
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        },
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 101.0
+        }
+       ],
+       "duration": 0.25,
+       "offset": 0.0,
+       "exitTime": 0.25,
+       "hasExitTime": false,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "compass_out_to_idle",
+       "toIndex": 24,
+       "name": "LActions.Idle -> LActions.compass_out_to_idle",
+       "conditions": [
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 404.0
+        },
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        }
+       ],
+       "duration": 0.25,
+       "offset": 0.0,
+       "exitTime": 0.0,
+       "hasExitTime": false,
+       "fixedDuration": false,
+       "interruption": 2,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "hand_drop_stuff",
+       "toIndex": 27,
+       "name": "LActions.Idle -> LActions.hand_drop_stuff",
+       "conditions": [
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        },
+        {
+         "param": "LActionIndex",
+         "mode": "Equals",
+         "threshold": 300.0
+        }
+       ],
+       "duration": 0.10000000149011612,
+       "offset": 0.0,
+       "exitTime": 0.0,
+       "hasExitTime": false,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      },
+      {
+       "to": "Fallback",
+       "toIndex": 6,
+       "name": "LActions.Idle -> LActions.Fallback",
+       "conditions": [
+        {
+         "param": "HandReady",
+         "mode": "If",
+         "threshold": 0.0
+        }
+       ],
+       "duration": 0.038581863045692444,
+       "offset": 0.0,
+       "exitTime": 0.25,
+       "hasExitTime": false,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ]
+    },
+    {
+     "name": "Trunk Close",
+     "tag": null,
+     "speed": 1.25,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 12
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.Trunk Close -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.05714285373687744,
+       "offset": 0.38823550939559937,
+       "exitTime": 0.9873950481414795,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 1
+       }
+      }
+     ]
+    },
+    {
+     "name": "generic_90",
+     "tag": null,
+     "speed": 1.2999999523162842,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 13
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.generic_90 -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.04999995231628418,
+       "offset": 0.0,
+       "exitTime": 0.9793522357940674,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 2
+       }
+      }
+     ]
+    },
+    {
+     "name": "hand_nv_on",
+     "tag": null,
+     "speed": 1.25,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 14
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.hand_nv_on -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.10000000149011612,
+       "offset": 0.0,
+       "exitTime": 0.9900000095367432,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 3
+       }
+      }
+     ]
+    },
+    {
+     "name": "OPEN_PUSH_RIGHT_HINGE",
+     "tag": null,
+     "speed": 1.2000000476837158,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 15
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.OPEN_PUSH_RIGHT_HINGE -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.10000002384185791,
+       "offset": 0.0,
+       "exitTime": 0.9635714888572693,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 4
+       }
+      }
+     ]
+    },
+    {
+     "name": "hand_nv_off",
+     "tag": null,
+     "speed": 1.25,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 16
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.hand_nv_off -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.25,
+       "offset": 0.0,
+       "exitTime": 0.8125001192092896,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 5
+       }
+      }
+     ]
+    },
+    {
+     "name": "Fallback",
+     "tag": null,
+     "speed": 2.0,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 17
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.Fallback -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.009999999776482582,
+       "offset": 0.0,
+       "exitTime": 1.0,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 24
+       }
+      }
+     ]
+    },
+    {
+     "name": "generic_180",
+     "tag": null,
+     "speed": 1.2999999523162842,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 18
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.generic_180 -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.050000131130218506,
+       "offset": 0.0,
+       "exitTime": 0.9789473414421082,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 7
+       }
+      }
+     ]
+    },
+    {
+     "name": "OPEN_PULL_LEFT_HINGE",
+     "tag": null,
+     "speed": 1.2000000476837158,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 19
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.OPEN_PULL_LEFT_HINGE -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.10000002384185791,
+       "offset": 0.0,
+       "exitTime": 0.9696429371833801,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 8
+       }
+      }
+     ]
+    },
+    {
+     "name": "generic_0",
+     "tag": null,
+     "speed": 1.2999999523162842,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 11
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.generic_0 -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.04999995231628418,
+       "offset": 0.0,
+       "exitTime": 0.9719298481941223,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 9
+       }
+      }
+     ]
+    },
+    {
+     "name": "hand_slap_forward",
+     "tag": null,
+     "speed": 1.399999976158142,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 21
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.hand_slap_forward -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.07571428269147873,
+       "offset": 0.0,
+       "exitTime": 1.0,
+       "hasExitTime": true,
+       "fixedDuration": false,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 10
+       }
+      }
+     ]
+    },
+    {
+     "name": "pull_hinge_right",
+     "tag": null,
+     "speed": 1.2999999523162842,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 22
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.pull_hinge_right -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.10000002384185791,
+       "offset": 0.0,
+       "exitTime": 0.9693151116371155,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 11
+       }
+      }
+     ]
+    },
+    {
+     "name": "hand_faceshield_off",
+     "tag": null,
+     "speed": 1.25,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 23
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.hand_faceshield_off -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.10000000149011612,
+       "offset": 0.0,
+       "exitTime": 0.9900000095367432,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 12
+       }
+      }
+     ]
+    },
+    {
+     "name": "push_hinge_left",
+     "tag": null,
+     "speed": 1.2999999523162842,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 11
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.push_hinge_left -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.09999990463256836,
+       "offset": 0.0,
+       "exitTime": 0.9732603430747986,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 0
+       }
+      }
+     ]
+    },
+    {
+     "name": "GESTURES",
+     "tag": null,
+     "speed": 1.0,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "blendType": 0,
+      "param": "GestureIndex",
+      "paramY": "#4294967295",
+      "children": [
+       {
+        "clip": null,
+        "clipIndex": 25
+       },
+       {
+        "clip": null,
+        "clipIndex": 26
+       },
+       {
+        "clip": null,
+        "clipIndex": 27
+       },
+       {
+        "clip": null,
+        "clipIndex": 28
+       },
+       {
+        "clip": null,
+        "clipIndex": 29
+       },
+       {
+        "clip": null,
+        "clipIndex": 30
+       },
+       {
+        "clip": null,
+        "clipIndex": 31
+       }
+      ],
+      "thresholds": [
+       0.0,
+       1.0,
+       2.0,
+       3.0,
+       4.0,
+       5.0,
+       6.0
+      ]
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.GESTURES -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.10000000149011612,
+       "offset": 0.0,
+       "exitTime": 0.8999999761581421,
+       "hasExitTime": true,
+       "fixedDuration": false,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 13
+       }
+      }
+     ]
+    },
+    {
+     "name": "generic_270",
+     "tag": null,
+     "speed": 1.2999999523162842,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 32
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.generic_270 -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.050000011920928955,
+       "offset": 0.0,
+       "exitTime": 1.0,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 14
+       }
+      }
+     ]
+    },
+    {
+     "name": "push_hinge_right",
+     "tag": null,
+     "speed": 1.2999999523162842,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 33
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.push_hinge_right -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.10000008344650269,
+       "offset": 0.0,
+       "exitTime": 0.9605480432510376,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 15
+       }
+      }
+     ]
+    },
+    {
+     "name": "hand_key_use",
+     "tag": null,
+     "speed": 1.25,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 34
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.hand_key_use -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.15000000596046448,
+       "offset": 0.0,
+       "exitTime": 1.0,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 16
+       }
+      }
+     ]
+    },
+    {
+     "name": "Take Loot",
+     "tag": null,
+     "speed": 1.25,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": true,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 35
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.Take Loot -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.0,
+       "offset": 0.0,
+       "exitTime": 1.0,
+       "hasExitTime": true,
+       "fixedDuration": false,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 17
+       }
+      }
+     ]
+    },
+    {
+     "name": "hand_faceshield_on",
+     "tag": null,
+     "speed": 1.25,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 36
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.hand_faceshield_on -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.10000000149011612,
+       "offset": 0.0,
+       "exitTime": 0.9900000095367432,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 18
+       }
+      }
+     ]
+    },
+    {
+     "name": "OPEN_PUSH_LEFT_HINGE",
+     "tag": null,
+     "speed": 1.2000000476837158,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 37
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.OPEN_PUSH_LEFT_HINGE -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.05239415168762207,
+       "offset": 0.0,
+       "exitTime": 0.9786372184753418,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 19
+       }
+      }
+     ]
+    },
+    {
+     "name": "Trunk Open",
+     "tag": null,
+     "speed": 1.25,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 38
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.Trunk Open -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.05000007152557373,
+       "offset": 0.3107143044471741,
+       "exitTime": 0.9714285731315613,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 20
+       }
+      }
+     ]
+    },
+    {
+     "name": "pull_hinge_left",
+     "tag": null,
+     "speed": 1.2999999523162842,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 39
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.pull_hinge_left -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.10000002384185791,
+       "offset": 0.0,
+       "exitTime": 0.9654795527458191,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 21
+       }
+      }
+     ]
+    },
+    {
+     "name": "OPEN_PULL_RIGHT_HINGE",
+     "tag": null,
+     "speed": 1.2000000476837158,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 15
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.OPEN_PULL_RIGHT_HINGE -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.09999996423721313,
+       "offset": 0.0,
+       "exitTime": 0.9514286518096924,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 22
+       }
+      }
+     ]
+    },
+    {
+     "name": "compass_out_to_idle",
+     "tag": null,
+     "speed": 1.0,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": "compass_out_to_idle",
+      "clipIndex": 41
+     },
+     "transitions": [
+      {
+       "to": "compass_use",
+       "toIndex": 26,
+       "name": "LActions.compass_out_to_idle -> LActions.compass_use",
+       "conditions": [],
+       "duration": 0.20000000298023224,
+       "offset": 0.0,
+       "exitTime": 0.8999999761581421,
+       "hasExitTime": true,
+       "fixedDuration": false,
+       "interruption": 2,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "AnimationEventsStateBehaviour",
+       "fields": {
+        "EventsContainer": {},
+        "FullName": "LActions.compass_out_to_idle",
+        "FullNameHash": 268070204,
+        "EventsListId": 5
+       }
+      }
+     ]
+    },
+    {
+     "name": "compass_idle_to_out",
+     "tag": null,
+     "speed": 1.0,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": "compass_idle_to_out",
+      "clipIndex": 42
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.compass_idle_to_out -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.33000001311302185,
+       "offset": 0.0,
+       "exitTime": 0.5079209804534912,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 23
+       }
+      },
+      {
+       "class": "AnimationEventsStateBehaviour",
+       "fields": {
+        "EventsContainer": {},
+        "FullName": "LActions.compass_idle_to_out",
+        "FullNameHash": 18416827,
+        "EventsListId": 6
+       }
+      }
+     ]
+    },
+    {
+     "name": "compass_use",
+     "tag": null,
+     "speed": 1.0,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": "compass_use",
+      "clipIndex": 43
+     },
+     "transitions": [
+      {
+       "to": "compass_idle_to_out",
+       "toIndex": 25,
+       "name": "LActions.compass_use -> LActions.compass_idle_to_out",
+       "conditions": [
+        {
+         "param": "LActionIndex",
+         "mode": "NotEqual",
+         "threshold": 404.0
+        }
+       ],
+       "duration": 0.25,
+       "offset": 0.0,
+       "exitTime": 0.0,
+       "hasExitTime": false,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ]
+    },
+    {
+     "name": "hand_drop_stuff",
+     "tag": null,
+     "speed": 1.0,
+     "cycleOffset": 0.0,
+     "speedParam": null,
+     "mirrorParam": null,
+     "cycleParam": null,
+     "timeParam": null,
+     "writeDefaults": true,
+     "loop": false,
+     "mirror": false,
+     "iKOnFeet": false,
+     "motion": {
+      "clip": null,
+      "clipIndex": 44
+     },
+     "transitions": [
+      {
+       "to": "Idle",
+       "toIndex": 0,
+       "name": "LActions.hand_drop_stuff -> LActions.Idle",
+       "conditions": [],
+       "duration": 0.0,
+       "offset": 0.0,
+       "exitTime": 1.0,
+       "hasExitTime": true,
+       "fixedDuration": true,
+       "interruption": 0,
+       "orderedInterruption": true,
+       "canTransitionToSelf": true
+      }
+     ],
+     "behaviours": [
+      {
+       "class": "LActionState",
+       "fields": {
+        "LActionSetupId": 25
+       }
+      },
+      {
+       "class": "AnimationEventsStateBehaviour",
+       "fields": {
+        "EventsContainer": {},
+        "FullName": "LActions.hand_drop_stuff",
+        "FullNameHash": -909179027,
+        "EventsListId": 7
+       }
+      }
+     ]
+    }
+   ],
+   "anyState": []
+  }
+ ],
+ "behaviours": [
+  {
+   "layer": "LActions",
+   "state": "compass_idle_to_out",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 23
+     }
+    },
+    {
+     "class": "AnimationEventsStateBehaviour",
+     "fields": {
+      "EventsContainer": {},
+      "FullName": "LActions.compass_idle_to_out",
+      "FullNameHash": 18416827,
+      "EventsListId": 6
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "OPEN_PULL_RIGHT_HINGE",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 22
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "Fallback",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 24
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "compass_out_to_idle",
+   "behaviours": [
+    {
+     "class": "AnimationEventsStateBehaviour",
+     "fields": {
+      "EventsContainer": {},
+      "FullName": "LActions.compass_out_to_idle",
+      "FullNameHash": 268070204,
+      "EventsListId": 5
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "OPEN_PULL_LEFT_HINGE",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 8
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "hand_faceshield_off",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 12
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "generic_90",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 2
+     }
+    }
+   ]
+  },
+  {
+   "layer": "Hands",
+   "state": "OUT TO USE",
+   "behaviours": [
+    {
+     "class": "AnimationEventsStateBehaviour",
+     "fields": {
+      "EventsContainer": {},
+      "FullName": "Hands.OUT TO USE",
+      "FullNameHash": 492683391,
+      "EventsListId": 2
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "hand_nv_on",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 3
+     }
+    }
+   ]
+  },
+  {
+   "layer": "Hands",
+   "state": "USE_1",
+   "behaviours": [
+    {
+     "class": "AnimationEventsStateBehaviour",
+     "fields": {
+      "EventsContainer": {},
+      "FullName": "Hands.USE_1",
+      "FullNameHash": 719885042,
+      "EventsListId": 3
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "hand_key_use",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 16
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "GESTURES",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 13
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "Trunk Open",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 20
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "push_hinge_left",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 0
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "push_hinge_right",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 15
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "generic_180",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 7
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "Take Loot",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 17
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "OPEN_PUSH_LEFT_HINGE",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 19
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "pull_hinge_right",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 11
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "hand_faceshield_on",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 18
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "hand_slap_forward",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 10
+     }
+    }
+   ]
+  },
+  {
+   "layer": "Hands",
+   "state": "USE TO OUT",
+   "behaviours": [
+    {
+     "class": "AnimationEventsStateBehaviour",
+     "fields": {
+      "EventsContainer": {},
+      "FullName": "Hands.USE TO OUT",
+      "FullNameHash": -1014941517,
+      "EventsListId": 0
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "hand_drop_stuff",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 25
+     }
+    },
+    {
+     "class": "AnimationEventsStateBehaviour",
+     "fields": {
+      "EventsContainer": {},
+      "FullName": "LActions.hand_drop_stuff",
+      "FullNameHash": -909179027,
+      "EventsListId": 7
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "generic_0",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 9
+     }
+    }
+   ]
+  },
+  {
+   "layer": "Hands",
+   "state": "USE",
+   "behaviours": [
+    {
+     "class": "AnimationEventsStateBehaviour",
+     "fields": {
+      "EventsContainer": {},
+      "FullName": "Hands.USE",
+      "FullNameHash": -735675743,
+      "EventsListId": 1
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "pull_hinge_left",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 21
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "generic_270",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 14
+     }
+    }
+   ]
+  },
+  {
+   "layer": "Hands",
+   "state": "BREAK -1",
+   "behaviours": [
+    {
+     "class": "AnimationEventsStateBehaviour",
+     "fields": {
+      "EventsContainer": {},
+      "FullName": "Hands.BREAK -1",
+      "FullNameHash": -431637764,
+      "EventsListId": 4
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "hand_nv_off",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 5
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "Trunk Close",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 1
+     }
+    }
+   ]
+  },
+  {
+   "layer": "LActions",
+   "state": "OPEN_PUSH_RIGHT_HINGE",
+   "behaviours": [
+    {
+     "class": "LActionState",
+     "fields": {
+      "LActionSetupId": 4
+     }
+    }
+   ]
+  }
+ ],
+ "clips": [
+  "beer_idle_to_out",
+  "beer_idle_to_out_3rd",
+  "beer_use",
+  "beer_use_3rd",
+  "beer_out_to_idle",
+  "beer_out_to_idle_3rd",
+  "beer_use",
+  "beer_use_3rd",
+  "beer_break",
+  "beer_break_3rd",
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  "compass_out_to_idle",
+  "compass_idle_to_out",
+  "compass_use",
+  null
+ ]
+}
